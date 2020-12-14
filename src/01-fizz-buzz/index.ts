@@ -16,6 +16,16 @@
  * console.log('buzz')
  */
 
-function fizzBuzz(n: number) {}
+function fizzBuzz(n: number) {
+    for (let i = 1; i <= n; i++) {
+  const divBy3 = i % 3 == 0, divBy5 = i % 5 == 0;
+  console.log(
+    divBy3 && divBy5 ? "fizzbuzz"
+    : divBy3 ? "fizz"
+    : divBy5 ? "buzz"
+    : i
+  );
+}
+}
 
 export { fizzBuzz };
